@@ -1,6 +1,8 @@
 @use "../util/" as *;
 
 .toggle {
+  border: none;
+
   &__buton {
     width: rem(16);
     height: rem(16);
