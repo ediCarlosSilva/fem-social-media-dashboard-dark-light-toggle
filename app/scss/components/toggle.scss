@@ -3,10 +3,31 @@
 .toggle {
   border: none;
 
+  &__wrapper {
+    height: rem(24);
+  }
+
+  input[type="radio"] {
+    opacity: 0;
+  }
+
+  &__background {
+    height: 100%;
+    display: block;
+    background: linear-gradient(
+      225deg,
+      var(--toggle-bg-end) 0%,
+      var(--toggle-bg-start) 98.02%
+    );
+  }
+
   &__buton {
     width: rem(16);
     height: rem(16);
     border-radius: 50%;
     background-color: var(--toggle);
+  }
+
+  label {
   }
 }
