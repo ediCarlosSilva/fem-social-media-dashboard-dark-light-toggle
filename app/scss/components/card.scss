@@ -1,6 +1,9 @@
 @use "../util/" as *;
 
 .card {
+  background: var(--dark-card-bg);
+  color: var(--dark-text1);
+
   &__icon {
     &--facebook {
     }
