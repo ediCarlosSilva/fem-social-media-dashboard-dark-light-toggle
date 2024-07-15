@@ -30,7 +30,25 @@
   }
 
   &--instagram {
-    border-top: rem(5) solid var(--instagram-end);
+    position: relative;
+    overflow: hidden;
+    padding-top: rem(30);
+    &::before {
+      content: "";
+      height: rem(5);
+      width: 100%;
+      position: absolute;
+      display: block;
+      top: 0;
+      left: 0;
+      background: linear-gradient(
+        225deg,
+        var(--instagram-end),
+        var(--instagram-middle) 50.91%,
+        var(--instagram-start) 100%
+      ); //var(--instagram-start);
+    }
+    //border-top: rem(5) solid var(--instagram-end);
   }
 
   &--youtube {
@@ -41,7 +59,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    height: rem(20);
     margin-bottom: 28px;
+    // margin-top: rem(5);
   }
 
   &__icon {
