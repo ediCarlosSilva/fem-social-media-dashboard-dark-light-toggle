@@ -15,11 +15,19 @@
 }
 
 .card {
+  position: relative;
+  overflow: hidden;
   background: var(--dark-card-bg);
   border-radius: rem(5);
   color: var(--dark-text1);
   text-align: center;
   padding: rem(25);
+  transition: background 150ms ease-in-out;
+  cursor: pointer;
+
+  &:hover {
+    background: var(--dard-card-hover);
+  }
 
   &--facebook {
     border-top: rem(5) solid var(--facebook);
@@ -64,6 +72,11 @@
     // margin-top: rem(5);
   }
 
+  &__subtitle {
+    font-size: rem(14);
+    font-weight: 700;
+  }
+
   &__icon {
     margin-right: rem(8);
 
@@ -101,6 +114,7 @@
     }
 
     &--small {
+      font-size: rem(32);
     }
   }
 
