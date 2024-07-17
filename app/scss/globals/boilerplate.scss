@@ -17,3 +17,12 @@ body {
   color: var(--dark-text2);
   min-height: 150vh;
 }
+
+.visually-hidden {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
